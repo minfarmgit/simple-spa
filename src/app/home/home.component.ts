@@ -4,11 +4,14 @@ import html from "./home.component.html";
 import scss from "./home.component.scss";
 
 export class HomeComponent extends Component implements ComponentInstance {
-    template = html;
-    styles = scss;
+    public template = html;
+    public styles = scss;
 
-    constructor() {
-        super();
-        console.log('Home Component Constructor');
+    onInit() {
+        console.log('Init component');
+    }
+
+    onDestroy() {
+        console.log('Destroy component');
     }
 }

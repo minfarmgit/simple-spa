@@ -1,7 +1,5 @@
-import { Component } from "../commons/component";
-
 export interface ModuleRoute {
     path: string;
-    component?: Component;
+    component?: any;
     redirectTo?: string;
 }
